@@ -1,7 +1,7 @@
 # reto
-Se crearon tres microservicios:
-1: Microservicio de seguridad (8003): 
-  1.1: "/api/auth" (POST): método que recibe como parámetros usuario y password, si los datos son correctos devuelve un token:
+#Se crearon tres microservicios:
+#1: Microservicio de seguridad (8003): 
+#  1.1: "/api/auth" (POST): método que recibe como parámetros usuario y password, si los datos son correctos devuelve un token:
 ![image](https://user-images.githubusercontent.com/90285201/156874486-1b319ab0-e1be-4e78-b0c7-84a8e1044894.png)
 
 2: Microservicio de tipo de cambio (8004):
