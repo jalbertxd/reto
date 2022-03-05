@@ -1,0 +1,33 @@
+server:
+  port: 8005
+
+jwt:
+  secret: Key#SuperSecret$Aforo2SS#JavaMicroservices#987654321
+
+spring:
+  application:
+    name: ms-gateway
+  cloud:
+    gateway:
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+              allowedOrigins: "*"
+              allowedMethods: "*"
+              allowedHeaders: "*"
+      routes:      
+      - id: ms-security
+        uri: http://service-security:8003
+        predicates:
+          - Path=/security/**
+        filters:
+          - StripPrefix=1
+      - id: ms-tipo-cambio
+        uri: http://service-tipo-cambio:8004
+        predicates:
+          - Path=/tipoCambio/**
+        filters:
+          - StripPrefix=1
+          - JwtAuthenticationFilter

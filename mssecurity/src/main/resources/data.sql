@@ -1,0 +1,1 @@
+INSERT INTO access (userid, fullname, username, password)VALUES(1,'Jaime Gómez Ruiz', 'jgomezr', '123456');
