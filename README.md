@@ -15,16 +15,16 @@ Se crearon tres microservicios:
   2.2: "/api/tipoCambio/{id}" (GET): devuelve el tipo de cambio que tiene como identificador el {id} del parámetro
   ![image](https://user-images.githubusercontent.com/90285201/156875036-32868524-63a5-40a6-970f-616f71ba97db.png)
   
-  2.2: "/api/tipoCambio" (POST): agregar un tipo de cambio:
+  2.3: "/api/tipoCambio" (POST): agregar un tipo de cambio:
   ![image](https://user-images.githubusercontent.com/90285201/156874712-2f51dbf4-65aa-489a-b122-d7e514bc0306.png)
   
-  2.3: "/api/tipoCambio" (PUT): actualiza un tipo de cambio:
+  2.4: "/api/tipoCambio" (PUT): actualiza un tipo de cambio:
   ![image](https://user-images.githubusercontent.com/90285201/156874903-62204f5e-956b-44d2-8120-3ab564c1bb57.png)
   
-  2.4: "/api/tipoCambio/{id}" (DELETE): elimina un tipo de cambio:
+  2.5: "/api/tipoCambio/{id}" (DELETE): elimina un tipo de cambio:
   ![image](https://user-images.githubusercontent.com/90285201/156874974-6593dfb6-fe09-4abf-a8ed-cfedc9fc30d1.png)
   
-  2.5: "/api/tipoCambio/applyTipoCambio" (POST): aplica el tipo de cambio a un monto
+  2.6: "/api/tipoCambio/applyTipoCambio" (POST): aplica el tipo de cambio a un monto
   ![image](https://user-images.githubusercontent.com/90285201/156875080-ae514592-b26b-4c2d-9691-f830f362af8a.png)
 
 3: Microservicio de Gateway (8005): 
