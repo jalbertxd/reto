@@ -1,10 +1,14 @@
 # reto
-#Se crearon tres microservicios:
-#1: Microservicio de seguridad (8003): 
-#  1.1: "/api/auth" (POST): método que recibe como parámetros usuario y password, si los datos son correctos devuelve un token:
+
+Se crearon tres microservicios:
+
+1: Microservicio de seguridad (8003): 
+
+  1.1: "/api/auth" (POST): método que recibe como parámetros usuario y password, si los datos son correctos devuelve un token:
 ![image](https://user-images.githubusercontent.com/90285201/156874486-1b319ab0-e1be-4e78-b0c7-84a8e1044894.png)
 
 2: Microservicio de tipo de cambio (8004):
+
   2.1: "/api/tipoCambio" (GET): devuelve un listado con todos los tipos de cambio regstrados:
   ![image](https://user-images.githubusercontent.com/90285201/156874606-420d6669-1c70-48fe-a1af-3f18979f3ce4.png)
   
@@ -24,6 +28,7 @@
   ![image](https://user-images.githubusercontent.com/90285201/156875080-ae514592-b26b-4c2d-9691-f830f362af8a.png)
 
 3: Microservicio de Gateway (8005): 
+
   3.1: Microservicio de seguridad con el filtro del gateway:
   ![image](https://user-images.githubusercontent.com/90285201/156875179-51dd08e4-a380-4903-9738-dd2b6788a52c.png)
   
@@ -36,6 +41,7 @@
   ![image](https://user-images.githubusercontent.com/90285201/156875242-885bd4f9-cea8-406f-ae5e-bb96784ea0f2.png)
 
 IMPORTANTE: 
+
 - todos los microservicios tienen su archivo Dockerfile dentro del repositorio que sirvio para crear la imagen de cada microservicio
 - las pruebas se hicieron con los contenedores en ejecución de cada microservicio:
 
